@@ -1,25 +1,24 @@
 .oneLastThing {
-    position: relative;
-    line-height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 21.44rem;
+    
+    color: var(--black, #1D1E1C);
+    text-align: center;
+    /* font-family: Uxum Grotesque; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
   }
   .loremIpsumDolor {
-    position: relative;
+    
     font-size: 1rem;
     line-height: 1.5rem;
-    font-family: Inter;
+    /* font-family: Inter; */
     color: #626262;
     text-align: left;
     display: none;
     width: 28rem;
   }
   .oneLastThingHowDidYouHeParent {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 225px);
     width: 28rem;
     display: flex;
     flex-direction: column;
@@ -29,32 +28,30 @@
   }
   .input {
     border: 0;
-    font-family: Inter;
+    /* font-family: Inter; */
     font-size: 0.94rem;
     background-color: transparent;
-    position: relative;
+    
     width: 28rem;
     height: 4.38rem;
   }
   .inputWrapper {
-    position: absolute;
-    top: 6.5rem;
-    left: calc(50% - 223.5px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding-bottom: 2rem;
   }
   .getStarted {
-    position: relative;
+    
     font-size: 0.88rem;
     line-height: 1.5rem;
-    font-family: Inter;
+    /* font-family: Inter; */
     color: #fff;
     text-align: center;
   }
   .arrowrightSmIcon {
-    position: relative;
+    
     width: 1.5rem;
     height: 1.5rem;
     overflow: hidden;
@@ -65,9 +62,6 @@
     border: 0;
     padding: 0 1.38rem;
     background-color: #1d1e1c;
-    position: absolute;
-    top: 12.38rem;
-    left: calc(50% - 224.5px);
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 28rem;
@@ -81,34 +75,37 @@
   }
   .modal,
   .question {
-    position: absolute;
-    top: calc(50% - 123px);
-    left: calc(50% - 224px);
+
+
     width: 28.06rem;
-    height: 15.38rem;
+    /* height: 15.38rem; */
   }
   .modal {
-    top: calc(50% - 212.5px);
-    left: calc(50% - 316px);
+    display: flex;
+    /* height: 525px; */
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1 0 0; */
     border-radius: 16px;
-    background-color: #fff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 39.5rem;
-    height: 26.63rem;
-    overflow: hidden;
+    background: var(--white, #FFF);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    margin: 190px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: left;
+    height: 21rem;
   }
   .signUp4 {
-    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /*  */
     width: 100%;
-    height: 51.31rem;
+    /* height: 51.31rem; */
     overflow: hidden;
-    /* background-image: url(/public/sign-up-4@3x.png); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #1d1e1c;
-    font-family: "Uxum Grotesque";
+    background: linear-gradient(to bottom,  rgb(255,197,120) 0%,rgb(251,157,35) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
   

@@ -9,9 +9,9 @@ const SignUp3 = ({setStep}) => {
       <div className={styles.modal}>
         <div className={styles.question}>
           <div className={styles.niceToMeetYouJohnWhatIsParent}>
-            <b className={styles.niceToMeet}>
+            <h3 className={styles.niceToMeet}>
               Nice to meet you John, what is your phone number?
-            </b>
+            </h3>
             <div className={styles.loremIpsumDolor}>
               Lorem ipsum dolor sit amet consectetur.
             </div>
@@ -25,16 +25,20 @@ const SignUp3 = ({setStep}) => {
               type="text"
               defaultValue="Phone number"
               id="phoneNumber"
+              style={{width: '85%'}}
             />
           </div>
-          <button className={styles.button} onClick={() => setStep(4)}>
-            <b className={styles.getStarted}>Next</b>
-            <img
-              className={styles.arrowrightSmIcon}
-              alt=""
-              src={rightArrow}
-            />
-          </button>
+          <div style={{paddingTop: '2rem'}}>
+            <button className={styles.button} onClick={() => setStep(4)}>
+              <p className={styles.getStarted}>Next</p>
+              <img
+                className={styles.arrowrightSmIcon}
+                alt=""
+                src={rightArrow}
+              />
+            </button>
+
+          </div>
         </div>
       </div>
     </div>

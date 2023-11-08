@@ -8,9 +8,9 @@ const SignUp2 = ({setStep}) => {
       <div className={styles.modal}>
         <div className={styles.question}>
           <div className={styles.welcomeOnboardWedLikeToParent}>
-            <b className={styles.welcomeOnboardWed}>
+            <h3 className={styles.welcomeOnboardWed}>
               Welcome onboard, we’d like to know your full name
-            </b>
+            </h3>
             <div className={styles.loremIpsumDolor}>
               Lorem ipsum dolor sit amet consectetur.
             </div>
@@ -28,7 +28,7 @@ const SignUp2 = ({setStep}) => {
               />
 
             </div>
-            <div className="pcb-1">
+            <div className="pcb-1" style={{paddingBottom: '2rem'}}>
               <label htmlFor="lastName" className="auth-label" style={{textAlign: 'justify'}}>Last Name</label>
               <input
                 className='input'
@@ -40,14 +40,17 @@ const SignUp2 = ({setStep}) => {
               />
             </div>
           </div>
-          <button className={styles.button} onClick={() => setStep(3)}>
-            <b className={styles.getStarted}>Next</b>
-            <img
-              className={styles.arrowrightSmIcon}
-              alt=""
-              src={arrowImg}
-            />
-          </button>
+          <div style={{marginBottom: '2rem'}}>
+            <button className={styles.button} onClick={() => setStep(3)}>
+              <b className={styles.getStarted}>Next</b>
+              <img
+                className={styles.arrowrightSmIcon}
+                alt=""
+                src={arrowImg}
+              />
+            </button>
+
+          </div>
         </div>
       </div>
     </div>

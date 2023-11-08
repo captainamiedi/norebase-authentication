@@ -4,8 +4,8 @@ import SignUp2 from '../components/Welcome';
 import SignUp3 from '../components/SignupThree';
 import SignUp4 from '../components/SignupFour';
 
-const StartSignup = ({step, setStep}) => {
-  // const [step, setStep] = useState(1)
+const StartSignup = () => {
+  const [step, setStep] = useState(1)
 
   const handleRenderPage = (componentStep) => {
     switch (componentStep) {

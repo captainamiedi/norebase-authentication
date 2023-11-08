@@ -1,0 +1,34 @@
+[
+  {
+    "id": {
+      "scope": "my-scope",
+      "name": "button",
+      "version": "0.0.1"
+    },
+    "config": {
+      "teambit.react/react": {
+        "__specific": true
+      },
+      "teambit.envs/envs": {
+        "env": "teambit.react/react",
+        "__specific": true
+      }
+    }
+  },
+  {
+    "id": {
+      "scope": "my-scope",
+      "name": "signup",
+      "version": "0.0.1"
+    },
+    "config": {
+      "teambit.react/react": {
+        "__specific": true
+      },
+      "teambit.envs/envs": {
+        "env": "teambit.react/react",
+        "__specific": true
+      }
+    }
+  }
+]

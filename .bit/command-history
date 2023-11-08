@@ -1,0 +1,84 @@
+2023-11-04T16:43:52.421Z start template
+2023-11-04T16:44:07.737Z end template, code: 1
+2023-11-04T16:44:30.384Z start help
+2023-11-04T16:44:41.877Z end help, code: 0
+2023-11-04T16:45:15.079Z start templates
+2023-11-04T16:45:37.225Z end templates, code: 0
+2023-11-04T16:46:33.328Z start status
+2023-11-04T16:46:45.564Z end status, code: 0
+2023-11-04T16:47:20.756Z start add .
+2023-11-04T16:47:43.115Z end add ., code: 1
+2023-11-04T16:48:56.705Z start status
+2023-11-04T16:49:09.385Z end status, code: 0
+2023-11-04T16:35:34.211Z start install @bitdev/react.react-env
+2023-11-04T16:49:38.697Z end install @bitdev/react.react-env, code: 1
+2023-11-04T16:51:09.130Z start add .
+2023-11-04T16:51:32.027Z end add ., code: 1
+2023-11-04T16:51:40.956Z start export
+2023-11-04T16:51:54.409Z end export, code: 0
+2023-11-04T16:52:22.770Z start status
+2023-11-04T16:52:33.682Z end status, code: 0
+2023-11-04T16:53:22.954Z start create react signup
+2023-11-04T16:53:52.048Z end create react signup, code: 0
+2023-11-04T16:54:48.939Z start install
+2023-11-04T16:56:21.419Z end install, code: 1
+2023-11-04T16:58:48.901Z start new react authentication --default-scope BrightAmidiagbe.norebase-authentication
+2023-11-04T16:59:03.166Z end new react authentication --default-scope BrightAmidiagbe.norebase-authentication, code: 1
+2023-11-04T16:59:30.266Z start create react button
+2023-11-04T16:59:50.438Z end create react button, code: 1
+2023-11-04T17:00:30.388Z start create react button
+2023-11-04T17:01:12.105Z end create react button, code: 0
+2023-11-04T20:24:33.654Z start install @learnbit/styling.transformers.tailwind
+2023-11-04T20:26:25.071Z end install @learnbit/styling.transformers.tailwind, code: 1
+2023-11-04T20:32:28.869Z start create react-env envs/my-react-env --aspect teambit.react/react-env
+2023-11-04T20:33:30.399Z end create react-env envs/my-react-env --aspect teambit.react/react-env, code: 1
+2023-11-04T20:34:01.618Z start install
+2023-11-04T20:35:32.245Z end install, code: 1
+2023-11-04T20:35:55.276Z start create react-env envs/my-react-env --aspect teambit.react/react-env
+2023-11-04T20:36:16.390Z end create react-env envs/my-react-env --aspect teambit.react/react-env, code: 1
+2023-11-04T21:16:17.606Z start tag
+2023-11-04T21:16:57.783Z end tag, code: 1
+2023-11-04T21:17:19.821Z start export
+2023-11-04T21:17:28.612Z end export, code: 0
+2023-11-04T21:17:45.589Z start tag
+2023-11-04T21:18:01.607Z end tag, code: 1
+2023-11-04T21:18:51.349Z start install --add-missing-deps
+2023-11-04T21:20:57.459Z end install --add-missing-deps, code: 1
+2023-11-04T21:21:08.715Z start tag
+2023-11-04T21:21:22.739Z end tag, code: 1
+2023-11-04T21:22:11.930Z start tag --ignore-issues MissingPackagesDependenciesOnFs, MissingManuallyConfiguredPackages, MissingDependenciesOnFs
+2023-11-04T21:22:27.400Z end tag --ignore-issues MissingPackagesDependenciesOnFs, MissingManuallyConfiguredPackages, MissingDependenciesOnFs, code: 0
+2023-11-04T21:22:37.988Z start export
+2023-11-04T21:22:49.296Z end export, code: 1
+2023-11-04T21:25:13.050Z start export
+2023-11-04T21:25:23.811Z end export, code: 1
+2023-11-04T21:26:26.184Z start remote
+2023-11-04T21:26:30.255Z end remote, code: 0
+2023-11-04T21:27:56.180Z start export
+2023-11-04T21:28:08.013Z end export, code: 1
+2023-11-04T21:28:21.336Z start login
+2023-11-04T21:28:45.658Z end login, code: 0
+2023-11-04T21:29:02.200Z start export
+2023-11-04T21:30:11.466Z end export, code: 0
+2023-11-06T12:27:43.254Z start tag
+2023-11-06T12:28:26.088Z end tag, code: 1
+2023-11-06T12:28:49.092Z start tag --ignore-issues MissingPackagesDependenciesOnFs, MissingManuallyConfiguredPackages
+2023-11-06T12:29:09.317Z end tag --ignore-issues MissingPackagesDependenciesOnFs, MissingManuallyConfiguredPackages, code: 0
+2023-11-06T12:29:25.264Z start export
+2023-11-06T12:29:41.414Z end export, code: 0
+2023-11-06T12:30:29.010Z start help
+2023-11-06T12:30:39.729Z end help, code: 0
+2023-11-06T12:31:33.931Z start app list
+2023-11-06T12:31:39.771Z end app list, code: 0
+2023-11-06T12:39:50.202Z start import
+2023-11-06T12:40:14.203Z end import, code: 0
+2023-11-06T12:40:16.532Z start compile
+2023-11-06T12:40:35.943Z end compile, code: 0
+2023-11-06T12:40:37.931Z start link
+2023-11-06T12:41:01.807Z end link, code: 0
+2023-11-08T11:58:04.232Z start import
+2023-11-08T11:58:24.323Z end import, code: 0
+2023-11-08T11:58:26.944Z start compile
+2023-11-08T11:58:44.463Z end compile, code: 0
+2023-11-08T11:58:46.867Z start link
+2023-11-08T11:59:08.311Z end link, code: 0

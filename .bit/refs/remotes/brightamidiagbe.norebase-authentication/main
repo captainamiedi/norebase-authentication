@@ -1,0 +1,16 @@
+[
+  {
+    "id": {
+      "scope": "brightamidiagbe.norebase-authentication",
+      "name": "button"
+    },
+    "head": "ad31790c70384bdfc40250b875c6319467f2f338"
+  },
+  {
+    "id": {
+      "scope": "brightamidiagbe.norebase-authentication",
+      "name": "signup"
+    },
+    "head": "78913cc19e205a08f09b561d3df142fd1158873e"
+  }
+]

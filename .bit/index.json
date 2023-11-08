@@ -1,0 +1,45 @@
+{
+  "components": [
+    {
+      "id": {
+        "scope": "bitdev.react",
+        "name": "react-env"
+      },
+      "isSymlink": false,
+      "hash": "332d61722e10572fbaef5995407ebdce773c6a7e"
+    },
+    {
+      "id": {
+        "scope": null,
+        "name": "button"
+      },
+      "isSymlink": true,
+      "hash": "7b7fcc78d6cd1507925b769b1386ced3683f99c7"
+    },
+    {
+      "id": {
+        "scope": null,
+        "name": "signup"
+      },
+      "isSymlink": true,
+      "hash": "4e3d91444d2d47e7ed5711fdce33fc7928a8a7f9"
+    },
+    {
+      "id": {
+        "scope": "brightamidiagbe.norebase-authentication",
+        "name": "button"
+      },
+      "isSymlink": false,
+      "hash": "9da0670566de9fc560f4fd3fde074c4bd3a080ff"
+    },
+    {
+      "id": {
+        "scope": "brightamidiagbe.norebase-authentication",
+        "name": "signup"
+      },
+      "isSymlink": false,
+      "hash": "50f3002029be119e557628994adcbb8dfc508b6a"
+    }
+  ],
+  "lanes": []
+}

@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://Norebase@dev.azure.com/Norebase/Start/_git/Norebase-Auth"
+    "url": "git+https://github.com/captainamiedi/norebase-authentication.git"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",

@@ -4,7 +4,7 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = StartSignup;
+exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _Signup = _interopRequireDefault(require("../components/Signup"));
 var _Welcome = _interopRequireDefault(require("../components/Welcome"));
@@ -13,10 +13,10 @@ var _SignupFour = _interopRequireDefault(require("../components/SignupFour"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
-function StartSignup(_ref) {
+var StartSignup = function StartSignup(_ref) {
   var step = _ref.step,
     setStep = _ref.setStep;
-  // const [step, setStep] = React.useState(1)
+  // const [step, setStep] = useState(1)
 
   var handleRenderPage = function handleRenderPage(componentStep) {
     switch (componentStep) {
@@ -43,4 +43,5 @@ function StartSignup(_ref) {
     }
   };
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, handleRenderPage(step));
-}
+};
+var _default = exports.default = StartSignup;

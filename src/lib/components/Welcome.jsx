@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./sign-up2.module.css";
 import arrowImg from '../assest/right-sm.png'
 

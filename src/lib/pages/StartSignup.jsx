@@ -4,8 +4,8 @@ import SignUp2 from '../components/Welcome';
 import SignUp3 from '../components/SignupThree';
 import SignUp4 from '../components/SignupFour';
 
-export default function StartSignup() {
-  const [step, setStep] = React.useState(1)
+const StartSignup = ({step, setStep}) => {
+  // const [step, setStep] = useState(1)
 
   const handleRenderPage = (componentStep) => {
     switch (componentStep) {
@@ -27,3 +27,5 @@ export default function StartSignup() {
     </>
   )
 }
+
+export default StartSignup

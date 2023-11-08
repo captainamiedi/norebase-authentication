@@ -4,8 +4,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _signUp4Module = _interopRequireDefault(require("./sign-up4.module.css"));
 var _react = _interopRequireDefault(require("react"));
+var _signUp4Module = _interopRequireDefault(require("./sign-up4.module.css"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var SignUp4 = function SignUp4() {
   return /*#__PURE__*/_react.default.createElement("div", {

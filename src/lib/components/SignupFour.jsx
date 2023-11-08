@@ -1,5 +1,5 @@
-import styles from "./sign-up4.module.css";
 import React from 'react'
+import styles from "./sign-up4.module.css";
 
 const SignUp4 = () => {
   return (

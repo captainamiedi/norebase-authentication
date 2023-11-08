@@ -18,7 +18,7 @@ var SignUp2 = function SignUp2(_ref) {
     className: _signUp2Module.default.question
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: _signUp2Module.default.welcomeOnboardWedLikeToParent
-  }, /*#__PURE__*/_react.default.createElement("b", {
+  }, /*#__PURE__*/_react.default.createElement("h3", {
     className: _signUp2Module.default.welcomeOnboardWed
   }, "Welcome onboard, we\u2019d like to know your full name"), /*#__PURE__*/_react.default.createElement("div", {
     className: _signUp2Module.default.loremIpsumDolor
@@ -40,7 +40,10 @@ var SignUp2 = function SignUp2(_ref) {
     defaultValue: "First name",
     id: "firstName"
   })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "pcb-1"
+    className: "pcb-1",
+    style: {
+      paddingBottom: '2rem'
+    }
   }, /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "lastName",
     className: "auth-label",
@@ -54,7 +57,11 @@ var SignUp2 = function SignUp2(_ref) {
     type: "text",
     defaultValue: "Last name",
     id: "lastName"
-  }))), /*#__PURE__*/_react.default.createElement("button", {
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      marginBottom: '2rem'
+    }
+  }, /*#__PURE__*/_react.default.createElement("button", {
     className: _signUp2Module.default.button,
     onClick: function onClick() {
       return setStep(3);
@@ -65,6 +72,6 @@ var SignUp2 = function SignUp2(_ref) {
     className: _signUp2Module.default.arrowrightSmIcon,
     alt: "",
     src: _rightSm.default
-  })))));
+  }))))));
 };
 var _default = exports.default = SignUp2;

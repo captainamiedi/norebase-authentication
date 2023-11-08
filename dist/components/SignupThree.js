@@ -18,7 +18,7 @@ var SignUp3 = function SignUp3(_ref) {
     className: _signUp3Module.default.question
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: _signUp3Module.default.niceToMeetYouJohnWhatIsParent
-  }, /*#__PURE__*/_react.default.createElement("b", {
+  }, /*#__PURE__*/_react.default.createElement("h3", {
     className: _signUp3Module.default.niceToMeet
   }, "Nice to meet you John, what is your phone number?"), /*#__PURE__*/_react.default.createElement("div", {
     className: _signUp3Module.default.loremIpsumDolor
@@ -36,18 +36,25 @@ var SignUp3 = function SignUp3(_ref) {
     placeholder: "Enter your phone number",
     type: "text",
     defaultValue: "Phone number",
-    id: "phoneNumber"
-  })), /*#__PURE__*/_react.default.createElement("button", {
+    id: "phoneNumber",
+    style: {
+      width: '85%'
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      paddingTop: '2rem'
+    }
+  }, /*#__PURE__*/_react.default.createElement("button", {
     className: _signUp3Module.default.button,
     onClick: function onClick() {
       return setStep(4);
     }
-  }, /*#__PURE__*/_react.default.createElement("b", {
+  }, /*#__PURE__*/_react.default.createElement("p", {
     className: _signUp3Module.default.getStarted
   }, "Next"), /*#__PURE__*/_react.default.createElement("img", {
     className: _signUp3Module.default.arrowrightSmIcon,
     alt: "",
     src: _rightSm.default
-  })))));
+  }))))));
 };
 var _default = exports.default = SignUp3;

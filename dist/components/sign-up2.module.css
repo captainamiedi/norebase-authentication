@@ -10,7 +10,7 @@
 }
 .loremIpsumDolor {
   /* position: relative; */
-  font-size: 1rem;
+  /* font-size: 1rem; */
   line-height: 1.5rem;
   /* font-family: Inter; */
   color: #626262;
@@ -22,12 +22,13 @@
   /* position: absolute;
   top: 0;
   left: calc(50% - 225px); */
-  width: 28rem;
+  /* width: 28rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
+  padding-bottom: 3rem;
 }
 .input {
   border: 0;
@@ -50,7 +51,7 @@
 }
 .getStarted {
   /* position: relative; */
-  font-size: 0.88rem;
+  /* font-size: 0.88rem; */
   line-height: 1.5rem;
   /* font-family: Inter; */
   color: #fff;
@@ -73,8 +74,8 @@
   left: calc(50% - 223.5px); */
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 28rem;
-  height: 3rem;
+  width: 100%;
+  height: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,7 +88,7 @@
   /* position: absolute;
   top: calc(50% - 165.5px);
   left: calc(50% - 224px); */
-  width: 28.06rem;
+  /* width: 28.06rem; */
   /* height: 20.75rem; */
 }
 .modal {
@@ -104,9 +105,9 @@
   margin: 190px 0px;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  /* width: 30%; */
   text-align: left;
-  height: 21rem;
+  /* height: 21rem; */
 }
 .signUp2 {
   height: 100vh;

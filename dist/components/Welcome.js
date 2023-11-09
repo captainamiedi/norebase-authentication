@@ -25,7 +25,10 @@ var SignUp2 = function SignUp2(_ref) {
   }, "Lorem ipsum dolor sit amet consectetur.")), /*#__PURE__*/_react.default.createElement("div", {
     className: _signUp2Module.default.inputParent
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "pcb-1"
+    className: "pcb-1",
+    style: {
+      width: '100%'
+    }
   }, /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "firstName",
     className: "auth-label",
@@ -42,7 +45,8 @@ var SignUp2 = function SignUp2(_ref) {
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "pcb-1",
     style: {
-      paddingBottom: '2rem'
+      paddingBottom: '2rem',
+      width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "lastName",
@@ -66,7 +70,7 @@ var SignUp2 = function SignUp2(_ref) {
     onClick: function onClick() {
       return setStep(3);
     }
-  }, /*#__PURE__*/_react.default.createElement("b", {
+  }, /*#__PURE__*/_react.default.createElement("p", {
     className: _signUp2Module.default.getStarted
   }, "Next"), /*#__PURE__*/_react.default.createElement("img", {
     className: _signUp2Module.default.arrowrightSmIcon,

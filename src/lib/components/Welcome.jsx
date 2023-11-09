@@ -16,7 +16,7 @@ const SignUp2 = ({setStep}) => {
             </div>
           </div>
           <div className={styles.inputParent}>
-            <div className="pcb-1">
+            <div className="pcb-1" style={{width: '100%'}}>
               <label htmlFor="firstName" className="auth-label" style={{textAlign: 'justify'}}>First Name</label>
               <input
                 className='input'
@@ -28,7 +28,7 @@ const SignUp2 = ({setStep}) => {
               />
 
             </div>
-            <div className="pcb-1" style={{paddingBottom: '2rem'}}>
+            <div className="pcb-1" style={{paddingBottom: '2rem', width: '100%'}}>
               <label htmlFor="lastName" className="auth-label" style={{textAlign: 'justify'}}>Last Name</label>
               <input
                 className='input'
@@ -42,7 +42,7 @@ const SignUp2 = ({setStep}) => {
           </div>
           <div style={{marginBottom: '2rem'}}>
             <button className={styles.button} onClick={() => setStep(3)}>
-              <b className={styles.getStarted}>Next</b>
+              <p className={styles.getStarted}>Next</p>
               <img
                 className={styles.arrowrightSmIcon}
                 alt=""

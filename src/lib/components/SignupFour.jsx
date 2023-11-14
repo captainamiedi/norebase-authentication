@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./sign-up4.module.css";
 import rightArrow from '../assest/right-sm.png'
 
-const SignUp4 = () => {
+const SignUp4 = ({handleChange, handleSubmit}) => {
   return (
     <div className={styles.signUp4}>
       <div className={styles.modal}>
@@ -15,26 +15,28 @@ const SignUp4 = () => {
               Lorem ipsum dolor sit amet consectetur.
             </div>
           </div>
-          <div className={styles.inputWrapper}>
+          <form className={styles.inputWrapper} onSubmit={handleSubmit}>
             <label htmlFor='hearAbout' className='auth-label' style={{textAlign: 'justify'}}>How did you hear about us?</label>
             <select
               id='hearAbout'
               name='hearAboutUs'
               className='input'
+              required
+              onChange={handleChange}
             >
               <option value="LinkedIn">LinkedIn</option>
               <option value="twitter">Twitter</option>
               <option value="Instagram">Instagram</option>
             </select>
-          </div>
-          <button className={styles.button}>
-            <p className={styles.getStarted}>Finish up</p>
-            <img
-              className={styles.arrowrightSmIcon}
-              alt=""
-              src={rightArrow}
-            />
-          </button>
+            <button className={styles.button} type='submit'>
+              <p className={styles.getStarted}>Finish up</p>
+              <img
+                className={styles.arrowrightSmIcon}
+                alt=""
+                src={rightArrow}
+              />
+            </button>
+          </form>
         </div>
       </div>
     </div>

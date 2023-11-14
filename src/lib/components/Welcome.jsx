@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./sign-up2.module.css";
 import arrowImg from '../assest/right-sm.png'
 
-const SignUp2 = ({setStep}) => {
+const SignUp2 = ({handleChange, handleFirstSubmit}) => {
   return (
     <div className={styles.signUp2}>
       <div className={styles.modal}>
@@ -15,42 +15,58 @@ const SignUp2 = ({setStep}) => {
               Lorem ipsum dolor sit amet consectetur.
             </div>
           </div>
-          <div className={styles.inputParent}>
+          <form className={styles.inputParent} onSubmit={handleFirstSubmit}>
             <div className="pcb-1" style={{width: '100%'}}>
-              <label htmlFor="firstName" className="auth-label" style={{textAlign: 'justify'}}>First Name</label>
+              <label htmlFor="fullName" className="auth-label" style={{textAlign: 'justify'}}>Full Name</label>
               <input
                 className='input'
-                value="First name"
-                placeholder="Enter your first name"
+                placeholder="Enter your full name"
                 type="text"
-                defaultValue="First name"
-                id="firstName"
+                id="fullName"
+                name="fullName"
+                required
+                onChange={handleChange}
               />
 
             </div>
             <div className="pcb-1" style={{paddingBottom: '2rem', width: '100%'}}>
-              <label htmlFor="lastName" className="auth-label" style={{textAlign: 'justify'}}>Last Name</label>
+              <label htmlFor="phoneNumber" className="auth-label" style={{textAlign: 'justify'}}>Phone Number</label>
               <input
                 className='input'
-                value="Last name"
-                placeholder="Enter your last name/surname"
+                placeholder="Enter your Phone number"
                 type="text"
-                defaultValue="Last name"
-                id="lastName"
+                id="phoneNumber"
+                required
+                onChange={handleChange}
+                name="phoneNumber"
               />
             </div>
-          </div>
-          <div style={{marginBottom: '2rem'}}>
-            <button className={styles.button} onClick={() => setStep(3)}>
-              <p className={styles.getStarted}>Next</p>
-              <img
-                className={styles.arrowrightSmIcon}
-                alt=""
-                src={arrowImg}
-              />
-            </button>
+            <div className="pcb-1" style={{paddingBottom: '2rem', width: '100%'}}>
+            <label htmlFor='hearAbout' className='auth-label' style={{textAlign: 'justify'}}>How did you hear about us?</label>
+            <select
+              id='hearAbout'
+              name='hearAboutUs'
+              className='input'
+              required
+              onChange={handleChange}
+            >
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="twitter">Twitter</option>
+              <option value="Instagram">Instagram</option>
+            </select>
+            </div>
+            <div style={{marginBottom: '2rem'}}>
+              <button className={styles.button} type="submit">
+                <p className={styles.getStarted}>Next</p>
+                <img
+                  className={styles.arrowrightSmIcon}
+                  alt=""
+                  src={arrowImg}
+                />
+              </button>
 
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

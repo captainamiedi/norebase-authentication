@@ -10,7 +10,9 @@ var _flatColorIcons_google = _interopRequireDefault(require("../assest/flat-colo
 var _edenLife = _interopRequireDefault(require("../assest/edenLife.png"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var Signup = function Signup(_ref) {
-  var setStep = _ref.setStep;
+  var setStep = _ref.setStep,
+    handleChange = _ref.handleChange,
+    handleFirstSubmit = _ref.handleFirstSubmit;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "sign-up-1"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -23,8 +25,9 @@ var Signup = function Signup(_ref) {
     className: "sign-up-on"
   }, "Sign up on Norebase "), /*#__PURE__*/_react.default.createElement("div", {
     className: "norebase-is-the"
-  }, "Norebase is the easiest way to start, scale and operate your business like a pro lorem ipsum dolor")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "input-parent"
+  }, "Norebase is the easiest way to start, scale and operate your business like a pro lorem ipsum dolor")), /*#__PURE__*/_react.default.createElement("form", {
+    className: "input-parent",
+    onSubmit: handleFirstSubmit
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
       paddingBottom: '1rem'
@@ -36,7 +39,10 @@ var Signup = function Signup(_ref) {
     className: "input",
     id: "Email",
     placeholder: "Enter your email address",
-    type: "text"
+    type: "text",
+    required: true,
+    name: "email",
+    onChange: handleChange
   })), /*#__PURE__*/_react.default.createElement("div", {
     style: {
       paddingBottom: '1rem'
@@ -46,22 +52,20 @@ var Signup = function Signup(_ref) {
     className: "auth-label"
   }, "Password"), /*#__PURE__*/_react.default.createElement("input", {
     className: "input",
-    value: "Password",
     placeholder: "Enter your password",
     type: "password",
-    defaultValue: "Password",
-    id: "password"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
+    id: "password",
+    name: "password",
+    required: true,
+    onChange: handleChange
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "pcb-1"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "button",
-    type: "button",
-    onClick: function onClick() {
-      return setStep(2);
-    }
+    type: "submit"
   }, /*#__PURE__*/_react.default.createElement("h5", {
     className: "get-started"
-  }, "Sign Up"))), /*#__PURE__*/_react.default.createElement("div", {
+  }, "Sign Up")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "pcb-1"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "button1",

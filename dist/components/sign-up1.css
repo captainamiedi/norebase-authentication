@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   gap: 4rem;
-  /* padding: 12% 4rem 0px 4rem */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .testimonials {
@@ -10,8 +11,9 @@
   padding: 147px 0px;
     max-width: 50%;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffc578+0,fb9d23+100;Orange+3D+%233 */
-background: linear-gradient(to bottom,  rgb(255,197,120) 0%,rgb(251,157,35) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
+/* background: linear-gradient(to bottom,  rgb(255,197,120) 0%,rgb(251,157,35) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: rgb(255,214,137);
+background: linear-gradient(90deg, rgba(255,214,137,1) 0%, rgba(244,122,49,1) 100%);
 }
 
 .modal {
@@ -50,6 +52,7 @@ box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
   max-width: 60rem;
   width: 100%;
   font-size: 14px;
+  box-sizing: border-box;
 }
 .auth-label {
   display: block;
@@ -139,4 +142,34 @@ font-style: normal;
 font-weight: 700;
 line-height: 24px; /* 150% */
 text-align: left;
+}
+/* .forget-password-container {
+  padding: 1rem 0px;
+} */
+
+.forget-password {
+  color: var(--darkest-grey, #252525);
+  /* font-family: Open Sans; */
+  /* font-size: 14px; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials {
+    display: none;
+  }
+  .sign-up-1 {
+    display: block;
+  }
+  .button1 {
+    width: 100%;
+  }
+  .modal {
+    padding: 3rem 2rem;
+    display: block;
+    box-sizing: border-box;
+  }
 }

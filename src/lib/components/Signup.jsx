@@ -3,7 +3,7 @@ import './sign-up1.css'
 import GoogleImg from '../assest/flat-color-icons_google.png'
 import EdenLife from '../assest/edenLife.png'
 
-const Signup = ({setStep}) => {
+const Signup = ({setStep, handleChange, handleFirstSubmit}) => {
   return (
     <div className="sign-up-1">
       <div className="modal">
@@ -15,7 +15,7 @@ const Signup = ({setStep}) => {
               business like a pro lorem ipsum dolor
             </div>
           </div>
-          <div className="input-parent">
+          <form className="input-parent" onSubmit={handleFirstSubmit}>
           <div style={{paddingBottom: '1rem'}}>
             <label htmlFor='Email' className='auth-label'>Email</label>
             <input
@@ -23,6 +23,9 @@ const Signup = ({setStep}) => {
               id="Email"
               placeholder="Enter your email address"
               type="text"
+              required
+              name='email'
+              onChange={handleChange}
             />
 
           </div>
@@ -30,21 +33,22 @@ const Signup = ({setStep}) => {
             <label htmlFor="password" className='auth-label'>Password</label>
             <input
               className="input"
-              value="Password"
               placeholder="Enter your password"
               type="password"
-              defaultValue="Password"
               id='password'
+              name='password'
+              required
+              onChange={handleChange}
             />
 
           </div>
-          </div>
-          <div className='pcb-1'>
-          <button className="button" type='button' onClick={() => setStep(2)}>
-            <h5 className="get-started">Sign Up</h5>
-          </button>
+            <div className='pcb-1'>
+            <button className="button" type='submit'>
+              <h5 className="get-started">Sign Up</h5>
+            </button>
+            </div>
+          </form>
 
-          </div>
           <div className="pcb-1">
             <button className="button1" type='button'>
               <img

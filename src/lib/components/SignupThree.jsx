@@ -3,7 +3,7 @@ import rightArrow from '../assest/right-sm.png'
 
 import styles from "./sign-up3.module.css";
 
-const SignUp3 = ({setStep}) => {
+const SignUp3 = ({handleChange, handleFirstSubmit}) => {
   return (
     <div className={styles.signUp3}>
       <div className={styles.modal}>
@@ -16,20 +16,19 @@ const SignUp3 = ({setStep}) => {
               Lorem ipsum dolor sit amet consectetur.
             </div>
           </div>
-          <div className={styles.inputWrapper}>
+          <form className={styles.inputWrapper} onSubmit={handleChange}>
             <label htmlFor="phoneNumber" style={{textAlign: 'justify'}} className="auth-label">Phone Number</label>
             <input
               className='input'
-              value="Phone number"
               placeholder="Enter your phone number"
-              type="text"
-              defaultValue="Phone number"
+              type="tel"
               id="phoneNumber"
-              style={{width: '85%'}}
+              name="phoneNumber"
+              required
+              onChange={handleChange}
             />
-          </div>
           <div style={{paddingTop: '2rem'}}>
-            <button className={styles.button} onClick={() => setStep(4)}>
+            <button className={styles.button} type="submit">
               <p className={styles.getStarted}>Next</p>
               <img
                 className={styles.arrowrightSmIcon}
@@ -39,6 +38,7 @@ const SignUp3 = ({setStep}) => {
             </button>
 
           </div>
+          </form>
         </div>
       </div>
     </div>

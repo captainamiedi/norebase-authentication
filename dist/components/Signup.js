@@ -8,11 +8,15 @@ var _react = _interopRequireDefault(require("react"));
 require("./sign-up1.css");
 var _flatColorIcons_google = _interopRequireDefault(require("../assest/flat-color-icons_google.png"));
 var _edenLife = _interopRequireDefault(require("../assest/edenLife.png"));
+var _reactRouterDom = require("react-router-dom");
+var _lucideReact = require("lucide-react");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var Signup = function Signup(_ref) {
   var setStep = _ref.setStep,
     handleChange = _ref.handleChange,
-    handleFirstSubmit = _ref.handleFirstSubmit;
+    handleFirstSubmit = _ref.handleFirstSubmit,
+    loading = _ref.loading,
+    handleGoogleSignin = _ref.handleGoogleSignin;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "sign-up-1"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -62,14 +66,16 @@ var Signup = function Signup(_ref) {
     className: "pcb-1"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "button",
-    type: "submit"
-  }, /*#__PURE__*/_react.default.createElement("h5", {
+    type: "submit",
+    disabled: loading
+  }, loading ? /*#__PURE__*/_react.default.createElement(_lucideReact.Loader, null) : /*#__PURE__*/_react.default.createElement("h5", {
     className: "get-started"
   }, "Sign Up")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "pcb-1"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "button1",
-    type: "button"
+    type: "button",
+    onClick: handleGoogleSignin
   }, /*#__PURE__*/_react.default.createElement("img", {
     className: "flat-color-iconsgoogle",
     alt: "",
@@ -78,7 +84,8 @@ var Signup = function Signup(_ref) {
     className: "sign-up-with"
   }, "Sign up with Google"))), /*#__PURE__*/_react.default.createElement("div", {
     className: "already-have-an-container"
-  }, /*#__PURE__*/_react.default.createElement("span", null, "Already have an account? "), /*#__PURE__*/_react.default.createElement("span", {
+  }, /*#__PURE__*/_react.default.createElement("span", null, "Already have an account? "), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/",
     className: "login-here"
   }, "Login here")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "testimonials"

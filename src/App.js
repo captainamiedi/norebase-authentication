@@ -2,11 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import StartSignup from './lib/pages/StartSignup';
 import Login from './lib/components/Login';
+import ForgotPassword from './lib/components/ForgotPassword';
+import { StartAuthentication } from './lib';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      <StartAuthentication />
+      <ToastContainer />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

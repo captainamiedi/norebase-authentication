@@ -2,8 +2,10 @@ import React from 'react'
 import './sign-up1.css'
 import GoogleImg from '../assest/flat-color-icons_google.png'
 import EdenLife from '../assest/edenLife.png'
+import { Link } from 'react-router-dom';
+import { Loader } from 'lucide-react';
 
-const Signup = ({setStep, handleChange, handleFirstSubmit}) => {
+const Signup = ({setStep, handleChange, handleFirstSubmit, loading, handleGoogleSignin}) => {
   return (
     <div className="sign-up-1">
       <div className="modal">
@@ -43,14 +45,14 @@ const Signup = ({setStep, handleChange, handleFirstSubmit}) => {
 
           </div>
             <div className='pcb-1'>
-            <button className="button" type='submit'>
-              <h5 className="get-started">Sign Up</h5>
+            <button className="button" type='submit' disabled={loading}>
+              {loading ? <Loader /> : <h5 className="get-started">Sign Up</h5>}
             </button>
             </div>
           </form>
 
           <div className="pcb-1">
-            <button className="button1" type='button'>
+            <button className="button1" type='button' onClick={handleGoogleSignin}>
               <img
                 className="flat-color-iconsgoogle"
                 alt=""
@@ -62,7 +64,7 @@ const Signup = ({setStep, handleChange, handleFirstSubmit}) => {
           </div>
           <div className="already-have-an-container">
             <span>{`Already have an account? `}</span>
-            <span className="login-here">Login here</span>
+            <Link to='/' className="login-here">Login here</Link>
           </div>
         </div>
       </div>

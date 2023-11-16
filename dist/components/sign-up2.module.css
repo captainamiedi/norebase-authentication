@@ -84,11 +84,24 @@
   text-align: left;
 }
 .signUp2 {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   width: 100%;
   overflow: hidden;
   background: rgb(255,214,137);
   background: linear-gradient(90deg, rgba(255,214,137,1) 0%, rgba(244,122,49,1) 100%);
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .signUp2 {
+    background: unset;
+  }
+  .modal {
+    padding: 3rem 2rem;
+    display: block;
+    box-sizing: border-box;
+    margin: unset;
+  }
 }

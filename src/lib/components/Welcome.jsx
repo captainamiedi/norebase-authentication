@@ -29,12 +29,12 @@ const SignUp2 = ({handleChange, handleFirstSubmit}) => {
               />
 
             </div>
-            <div className="pcb-1" style={{paddingBottom: '2rem', width: '100%'}}>
+            <div className="pcb-1" style={{width: '100%'}}>
               <label htmlFor="phoneNumber" className="auth-label" style={{textAlign: 'justify'}}>Phone Number</label>
               <input
                 className='input'
                 placeholder="Enter your Phone number"
-                type="text"
+                type="tel"
                 id="phoneNumber"
                 required
                 onChange={handleChange}
@@ -55,7 +55,7 @@ const SignUp2 = ({handleChange, handleFirstSubmit}) => {
               <option value="Instagram">Instagram</option>
             </select>
             </div>
-            <div style={{marginBottom: '2rem'}}>
+            <div style={{marginBottom: '2rem', width: '100%'}}>
               <button className={styles.button} type="submit">
                 <p className={styles.getStarted}>Next</p>
                 <img

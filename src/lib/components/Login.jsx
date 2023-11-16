@@ -2,9 +2,17 @@ import React, {useState} from 'react'
 import './sign-up1.css'
 import GoogleImg from '../assest/flat-color-icons_google.png'
 import EdenLife from '../assest/edenLife.png'
+import { Link, useNavigate } from 'react-router-dom'
+import { Loader } from 'lucide-react'
+import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from '../firebaseSetup'
+import { firebaseErrorHandling } from '../utils/ErrorHandling'
 
-export default function Login() {
+export default function Login({routeAfterLogin}) {
     const [data, setData] = useState({})
+    const [loading, setIsLoading] = useState(false)
+
+    const navigate = useNavigate()
 
     const handleChange = ({target: {name, value}}) => {
         let temp = {...data}
@@ -12,9 +20,64 @@ export default function Login() {
         setData(temp)
     }
 
-    const handleSubmit = (e) => {
+    console.log(auth.currentUser, 'user details');
+    const handleSubmit =async (e) => {
         e.preventDefault()
-        console.log(data, 'login data');
+        try {
+          // console.log(data, 'login data');
+          setIsLoading(true)
+          const {email, password} = data
+          const userData = await signInWithEmailAndPassword(auth, email, password)
+          const user = userData.user;
+          const token = await user.getIdToken() 
+          console.log(user);
+          localStorage.setItem('userToken', token)
+          setIsLoading(false)
+          const userDetails = {
+            displayName: auth.currentUser.displayName,
+            email: auth.currentUser.email,
+            phoneNumber: auth.currentUser.phoneNumber
+          }
+          localStorage.setItem('userDetails', userDetails)
+          // navigate(routeAfterLogin)
+        } catch (error) {
+          console.log(error, 'error');
+          setIsLoading(false)
+          firebaseErrorHandling(error.code)
+        }
+    }
+    const provider = new GoogleAuthProvider();
+    const handleGoogleSignin = () => {
+      // console.log('google here');
+      signInWithPopup(auth, provider)
+    .then(async(result) => {
+      console.log(result, 'result');
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+      const user = result.user;
+      const token = await user.getIdToken();
+      console.log(token, 'token');
+      localStorage.setItem('access_token', token)
+      // The signed-in user info.
+      // console.log(await user.getIdToken(), 'users');
+      const userDetails = {
+        displayName: user.displayName,
+        email: user.email,
+        phoneNumber: user.phoneNumber
+      }
+      localStorage.setItem('userDetails', userDetails)
+      navigate(routeAfterLogin)
+    }).catch((error) => {
+      // Handle Errors here.
+      console.log(error, 'firebase google error');
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // The email of the user's account used.
+      const email = error.customData.email;
+      // The AuthCredential type that was used.
+      const credential = GoogleAuthProvider.credentialFromError(error);
+      // ...
+    });
     }
     return (
         <div className="sign-up-1">
@@ -53,18 +116,18 @@ export default function Login() {
                   onChange={handleChange}
                 />
                 <div className='forget-password-container'>
-                    <h5 className='forget-password' role='button'>Forgot password?</h5>
+                    <Link to='/forget-password' className='forget-password' role='button'>Forgot password?</Link>
                 </div>
               </div>
                 <div className='pcb-1'>
                 <button className="button" type='submit'>
-                  <h4 className="get-started">Login</h4>
+                  {loading ? <Loader /> : <h4 className="get-started">Login</h4>}
                 </button>
                 </div>
               </form>
     
               <div className="pcb-1">
-                <button className="button1" type='button'>
+                <button className="button1" type='button' onClick={handleGoogleSignin}>
                   <img
                     className="flat-color-iconsgoogle"
                     alt=""
@@ -76,7 +139,7 @@ export default function Login() {
               </div>
               <div className="already-have-an-container">
                 <span>{`New to Norebase? `}</span>
-                <span className="login-here">Sign up here</span>
+                <Link to='/signup' className="login-here">Sign up here</Link>
               </div>
             </div>
           </div>

@@ -79,6 +79,7 @@ border-radius: 8px;
 background: var(--black, #1D1E1C);
 box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
 color: #fff;
+cursor: pointer;
 }
 .pcb-1 {
   padding-bottom: 1rem;
@@ -95,6 +96,7 @@ flex-shrink: 0;
 border-radius: 8px;
 border: 1px solid var(--lighter-grey, #E1E1E1);
 box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+cursor: pointer;
 }
 
 .already-have-an-container {
@@ -104,15 +106,25 @@ box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 142.857% */
+  padding-top: 1rem;
 }
 
 .already-have-an-container span {
-  color: var(--black, #1D1E1C);
-/* font-family: Inter; */
+color: var(--grey, #9E9E9E);
+/* font-family: Open Sans; */
 font-size: 14px;
 font-style: normal;
-font-weight: 600;
-line-height: 20px;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+
+.login-here {
+  color: var(--black, #1D1E1C);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
 }
 .frame-parent {
   display: flex;
@@ -143,9 +155,9 @@ font-weight: 700;
 line-height: 24px; /* 150% */
 text-align: left;
 }
-/* .forget-password-container {
+.forget-password-container {
   padding: 1rem 0px;
-} */
+}
 
 .forget-password {
   color: var(--darkest-grey, #252525);
@@ -154,6 +166,43 @@ text-align: left;
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 142.857% */
+  cursor: pointer;
+  text-decoration: auto
+}
+
+.back-to-sign {
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--grey, #9E9E9E);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: auto
+}
+.back-to-sign span {
+  color: var(--black, #1D1E1C);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.receive-email {
+  padding-top: 1.5rem;
+  color: var(--grey, #9E9E9E);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.receive-email span {
+  color: var(--black, #1D1E1C);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
   cursor: pointer;
 }
 
@@ -171,5 +220,8 @@ text-align: left;
     padding: 3rem 2rem;
     display: block;
     box-sizing: border-box;
+  }
+  .already-have-an-container {
+    text-align: center;
   }
 }

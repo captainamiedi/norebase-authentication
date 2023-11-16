@@ -48,7 +48,6 @@ var SignUp2 = function SignUp2(_ref) {
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "pcb-1",
     style: {
-      paddingBottom: '2rem',
       width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("label", {
@@ -60,7 +59,7 @@ var SignUp2 = function SignUp2(_ref) {
   }, "Phone Number"), /*#__PURE__*/_react.default.createElement("input", {
     className: "input",
     placeholder: "Enter your Phone number",
-    type: "text",
+    type: "tel",
     id: "phoneNumber",
     required: true,
     onChange: handleChange,
@@ -91,7 +90,8 @@ var SignUp2 = function SignUp2(_ref) {
     value: "Instagram"
   }, "Instagram"))), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginBottom: '2rem'
+      marginBottom: '2rem',
+      width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: _signUp2Module.default.button,
